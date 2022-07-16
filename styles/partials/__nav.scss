@@ -1,0 +1,206 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 16px;
+    padding-top: 16px;
+    min-width: 375px;
+}
+
+.navbar__logo{
+    padding-top: 8px;
+}
+
+
+// mobile menu modal part
+
+.navbar__menu{
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 100%;
+    padding: 20px;
+    list-style: none;
+    color: #686868;
+    display: none;
+}
+
+.navbar__menu--close{
+    height: 24.04px;
+    margin-left: 175.98px;
+    margin-bottom: 31.98px;
+}
+
+.navbar__menu--close:hover{
+    cursor: pointer;
+}    
+
+.navbar__list{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.navbar__list:hover{
+    cursor: pointer;
+    color: #151515;
+}
+
+// toggle arrow 
+.icon-arrow-up{
+    margin-left: 7px;
+}
+
+// toggle accordion
+.navbar__menu--inner{
+    margin: 8px 0px 8px 47px;
+    list-style: none;
+    display: none;
+}
+
+.menu__list{
+    font-weight: 500;
+    font-size: 16px;
+    width: auto;
+    margin-bottom: 16px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu__list:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+// features list
+.icon-reminders{
+    margin-left: 2px;
+}
+
+.list__icon{
+    margin-right: 14px;
+}
+
+// company list *display toggle
+.menu__company{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 110px;
+    width: 100px;
+    margin-bottom: 24px;
+    display: none;
+}
+
+.navbar__button{
+    width: 195px;
+    height: 42px;
+    background-color: #ffffff;
+    color: #686868;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar__button:hover{
+    cursor: pointer;
+    color: #151515;
+}
+
+.login{
+    border: none;
+}
+.register{
+    border: 1.5px solid #686868;
+    border-radius: 14px;
+}
+
+@media(min-width:1440px) {
+
+    .navbar{
+        min-width: 700px;
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        margin: 0 40px;
+    }
+
+    .navbar__logo{
+        padding: 0;
+        margin-right: 60px;
+    }
+
+    .navbar__menu{
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar__categories{
+        display: flex;
+    }
+
+    .navbar__list{
+        margin-right: 40px;
+    }
+
+    .navbar__menu--inner{
+        margin: 0 auto;
+        padding: 24px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.149126);
+        display: none;
+    }
+
+    .menu__features{
+        position: absolute;
+        top: 70px;
+        left: 113px;
+        width: 153px;
+        height: 160px;
+    }
+    .menu__company{
+        position: absolute;
+        top: 70px;
+        left: 306px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 116px;
+        height: 128px;
+        display: none;
+    }
+
+    .menu__list{
+        font-size: 14px;
+        height: auto;
+    }
+
+    // modal buttons display none
+    .navbar__menu--close{
+        display: none;
+    }
+
+    .navbar__menu--open{
+        display: none;
+    }
+
+
+    .navbar__buttons{
+        display: flex;
+
+
+    }
+
+    .navbar__button{
+        width: 104px;
+        height: 42px;
+    }
+}

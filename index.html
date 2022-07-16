@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay"></div>
+      <nav class="navbar">
+        <img
+          class="navbar__logo"
+          src="./images/logo.svg"
+          alt="Snap brand logo"
+        />
+
+        <div class="navbar__menu">
+          <div class="navbar__categories">
+            <img
+              class="navbar__menu--close"
+              src="./images/icon-close-menu.svg"
+              alt=""
+            />
+
+            <li class="navbar__list features">
+              Features<span
+                ><img
+                  class="icon-arrow-up"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+              /></span>
+            </li>
+
+            <ul class="navbar__menu--inner menu__features">
+              <li class="menu__list features__list todo-list">
+                <img
+                  class="list__icon icon-todo"
+                  src="./images/icon-todo.svg"
+                  alt="todo list"
+                />Todo list
+              </li>
+              <li class="menu__list features__list calendar">
+                <img
+                  class="list__icon icon-calendar"
+                  src="./images/icon-calendar.svg"
+                  alt="calendar"
+                />Calendar
+              </li>
+              <li class="menu__list features__list reminders">
+                <img
+                  class="list__icon icon-reminders"
+                  src="./images/icon-reminders.svg"
+                  alt="reminders"
+                />Reminders
+              </li>
+              <li class="menu__list features__list planning">
+                <img
+                  class="list__icon icon-planning"
+                  src="./images/icon-planning.svg"
+                  alt="planning"
+                />Planning
+              </li>
+            </ul>
+
+            <li class="navbar__list company">
+              Company<span
+                ><img
+                  class="icon-arrow-up"
+                  src="./images/icon-arrow-up.svg"
+                  alt=""
+              /></span>
+            </li>
+
+            <ul class="navbar__menu--inner menu__company">
+              <li class="menu__list company__list">History</li>
+              <li class="menu__list company__list">Our Team</li>
+              <li class="menu__list company__list">Blog</li>
+              <li class="menu__list company__list pile">pile</li>
+            </ul>
+
+            <li class="navbar__list">Careers</li>
+            <li class="navbar__list">About</li>
+          </div>
+          <div class="navbar__buttons">
+            <button class="navbar__button login">Login</button>
+            <button class="navbar__button register">Register</button>
+          </div>
+        </div>
+
+        <img
+          class="navbar__menu--open"
+          src="./images/icon-menu.svg"
+          alt="button to open menu"
+        />
+      </nav>
+
+      <main class="hero">
+        <picture>
+          <source
+            srcset="./images/image-hero-desktop.png"
+            media="(min-width: 600px)"
+          />
+          <img
+            class="hero__image"
+            src="./images/image-hero-mobile.png"
+            alt="a man is holding a laptop"
+          />
+        </picture>
+
+        <section class="hero__main-content">
+          <h1 class="hero__title">Make remote work</h1>
+          <p class="hero__phrase">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <button class="hero__button">Learn more</button>
+          <section class="hero__partners">
+            <img
+              src="./images/client-databiz.svg"
+              alt=""
+              class="partners__logo"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt=""
+              class="partners__logo"
+            />
+            <img src="./images/client-meet.svg" alt="" class="partners__logo" />
+            <img
+              src="./images/client-maker.svg"
+              alt=""
+              class="partners__logo"
+            />
+          </section>
+        </section>
+      </main>
+      <footer class="attribution">
+        Challenge by
+        <a
+          class="att-a"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="att-a"
+          href="https://github.com/LeaHaelin/Frontend-Mentor-Challenges"
+          >Lea Haelin Kim</a
+        >.
+      </footer>
+    </div>
+  </body>
+</html>
